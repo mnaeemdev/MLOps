@@ -1,3 +1,5 @@
+##### ChatBook Social Media Application #####
+
 class chatbook:
     def __init__(self):
         self.username = ""
@@ -30,6 +32,8 @@ class chatbook:
                 break
 
 
+    # Methods for sign up and sign in
+
     def sign_up(self):
         print("Sign Up")
         username = input("Enter username: ")
@@ -52,6 +56,26 @@ class chatbook:
         print("\n")
         self.menu()
 
+    # Methods for messaging friends and writing posts
+
+    def message_friends(self):  
+        if self.logged_in == True:
+            friend_name = input("Enter your friend's name:")
+            message = input("Enter your message:")
+            print(f"Message sent to {friend_name}: {message}")
+        else:
+            print("Please log in to message friends.")
+        print("\n")
+        self.menu()
+
+    def write_post(self):
+        if self.logged_in == True:
+            post_content = input("Write your post:")
+            print("Post published:\n", post_content)
+        else:
+            print("Please log in to write a post.")
+        print("\n")
+        self.menu()
 
 
 # Creating an instance of the chatbook class to run the program
