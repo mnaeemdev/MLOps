@@ -16,4 +16,10 @@ print("Employee ID:", emp.id)
 emp.work("AI Chatbot Development")
 
 
-#Note: Everything in Python is an object, including classes themselves
+#Note: Everything in Python is a class object, including classes themselves
+a = 10
+str_obj = "Hello, World!"
+lst = [1, 2, 3, 4, 5]
+print(type(a))          # Output: <class 'int'>
+print(type(str_obj))    # Output: <class 'str'>
+print(type(lst))        # Output: <class 'list'>
