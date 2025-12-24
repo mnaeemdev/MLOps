@@ -1,11 +1,23 @@
 ##### ChatBook Social Media Application #####
 
 class chatbook:
+    __user_id = 1  # Private class variable to keep track of user IDs
     def __init__(self):
+        self.id = chatbook.__user_id
+        # chatbook.__user_id += 1  # Increment user ID for the next user
         self.username = ""
         self.password = ""
         self.logged_in = False
-        self.menu()
+        # self.menu()
+    
+    @staticmethod
+    def get_user_id():
+        return chatbook.__user_id
+    
+    @staticmethod
+    def set_user_id(new_id):
+        chatbook.__user_id = new_id  # Set a new value for user ID when this method is called
+        return chatbook.__user_id
 
     def menu(self):  # Main menu method
         while True:
