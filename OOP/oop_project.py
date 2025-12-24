@@ -22,11 +22,9 @@ class chatbook:
             elif choice == '2':
                 self.sign_in() 
             elif choice == '3':
-                pass
-                # self.message_friends()
+                self.message_friends()
             elif choice == '4':
-                pass
-                # self.write_post()
+                self.write_post()
             else:  
                 print("Exiting ChatBook. Goodbye!")
                 break
@@ -62,7 +60,7 @@ class chatbook:
         if self.logged_in == True:
             friend_name = input("Enter your friend's name:")
             message = input("Enter your message:")
-            print(f"Message sent to {friend_name}: {message}")
+            print(f"Message sent to {friend_name}: \n{message}")
         else:
             print("Please log in to message friends.")
         print("\n")
