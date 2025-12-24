@@ -1,0 +1,1 @@
+print('I love Pakistan and Imran Khan but don\'t like current government.')
