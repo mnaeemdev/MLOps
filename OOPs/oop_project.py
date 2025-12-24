@@ -22,11 +22,9 @@ class chatbook:
             elif choice == '2':
                 self.sign_in() 
             elif choice == '3':
-                pass
-                # self.message_friends()
+                self.message_friends()
             elif choice == '4':
-                pass
-                # self.write_post()
+                self.write_post()
             else:  
                 print("Exiting ChatBook. Goodbye!")
                 break
@@ -79,4 +77,4 @@ class chatbook:
 
 
 # Creating an instance of the chatbook class to run the program
-obj = chatbook()
+# obj = chatbook()
