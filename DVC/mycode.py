@@ -28,6 +28,9 @@ df.loc[len(df.index)] = new_row
 new_row2 = {'Name': 'Zain', 'Age': 23, 'City': 'Karachi'}
 df.loc[len(df.index)] = new_row2
 
+new_row3 = {'Name': 'Hassan', 'Age': 29, 'City': 'Islamabad'}
+df.loc[len(df.index)] = new_row3
+
 df.to_csv(csv_path, index=False)
 
 print("Data saved to data/people.csv")
