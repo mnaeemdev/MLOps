@@ -3,9 +3,9 @@ import pandas as pd
 import os
 
 data = {
-    'Name': ['Alice', 'Bob', 'Charlie'],
-    'Age': [25, 30, 35],
-    'City': ['New York', 'Los Angeles', 'Chicago']
+    'Name': ['Alice', 'Bob', 'Charlie', 'Ali'],
+    'Age': [25, 30, 35, 27],
+    'City': ['New York', 'Los Angeles', 'Chicago', 'Pakistan']
 }
 
 df = pd.DataFrame(data)
